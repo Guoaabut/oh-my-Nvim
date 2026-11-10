@@ -1,0 +1,9 @@
+# Neovim 运行时垃圾文件
+*.swp
+*.swo
+*~
+.netrwhist
+tags
+
+# 系统
+.DS_Store
