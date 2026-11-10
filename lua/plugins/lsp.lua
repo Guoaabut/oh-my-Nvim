@@ -174,7 +174,7 @@ return {
         set("n", "<leader>ca", vim.lsp.buf.code_action, "代码操作")
         set("v", "<leader>ca", vim.lsp.buf.code_action, "代码操作")
 
-        set("n", "<leader>d", vim.diagnostic.open_float, "查看当前行诊断")
+        set("n", "<leader>cd", vim.diagnostic.open_float, "查看当前行诊断")
         set("n", "[d", function()
           vim.diagnostic.jump({ count = -1, wrap = true })
         end, "上一个诊断")

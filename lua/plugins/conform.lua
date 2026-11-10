@@ -5,11 +5,19 @@ return {
   cmd = { "ConformInfo" },
   keys = {
     {
-      "<leader>f",
+      "<leader>cf",
       function()
         require("conform").format({ async = true, lsp_format = "fallback" })
       end,
       desc = "格式化缓冲区",
+    },
+    {
+      "<leader>uf",
+      function()
+        vim.g.disable_autoformat = not vim.g.disable_autoformat
+        vim.notify("保存时自动格式化: " .. (vim.g.disable_autoformat and "关闭" or "开启"))
+      end,
+      desc = "切换保存自动格式化",
     },
   },
   opts = {
