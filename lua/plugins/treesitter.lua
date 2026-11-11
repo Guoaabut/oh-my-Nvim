@@ -63,5 +63,9 @@ return {
 
       incremental_selection = { enable = true },
     })
+
+    -- Neovim 0.12 的 iter_matches() 返回节点列表，修补 nvim-treesitter master
+    -- 里仍按单个节点处理的 directive（详见 compat 文件注释）
+    require("config.treesitter_compat").setup()
   end,
 }

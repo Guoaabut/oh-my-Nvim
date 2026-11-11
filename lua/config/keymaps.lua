@@ -22,10 +22,7 @@ map("n", "<S-h>", "<cmd>bprevious<CR>", "上一个缓冲区")
 map("n", "<leader>bd", "<cmd>bdelete<CR>", "关闭当前缓冲区")
 
 -- ===== 移动与滚动 =====
-map("n", "<C-d>", "<C-d>zz", "向下翻页并居中")
-map("n", "<C-u>", "<C-u>zz", "向上翻页并居中")
-map("n", "n", "nzzzv", "下一个匹配并居中")
-map("n", "N", "Nzzzv", "上一个匹配并居中")
+-- 不做垂直居中（不使用 zz/zzzv），保持 Vim 原生的滚动与跳转行为
 map("n", "J", "mzJ`z", "合并下一行并保持光标位置")
 map("v", "J", ":m '>+1<CR>gv=gv", "下移选中行")
 map("v", "K", ":m '<-2<CR>gv=gv", "上移选中行")

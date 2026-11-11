@@ -11,6 +11,7 @@ return {
       { "<leader>c", group = "代码" },
       { "<leader>f", group = "查找" },
       { "<leader>g", group = "Git" },
+      { "<leader>m", group = "Markdown" },
       { "<leader>s", group = "窗口/分屏" },
       { "<leader>u", group = "界面开关" },
       { "<leader>x", group = "quickfix" },
